@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,21 +10,21 @@
 
 </head>
 <body>
-
-    <h2 class="fs-1 text fw-bold text-light"> Simulación </h2>
+    <h2 class="fs-1 text fw-bold text-light"> Rol </h2>
 
     <div class="contenedor-categoria">
 
         <article class="categoria">
             <a href="#" class="categoria_detalle">
                 <figure>
-                    <img src="../static/img/simulacion/sims-1-4291502.webp" alt="Sims 1">
+                    <img src="../static/img/rol/1188721.jpg" alt="World of Warcraft">
                 </figure>
                 <div class="categoria-info">
                     <h2><span class="badge text-bg-secondary">Precio: 9,99 CLP</span></h2>
-                    <p>Versión modernizada de la franquicia Los <b>Sims</b>,<br>
-                         con gráficos mejorados y un potente creador de personajes<br>
-                          y casas, enfocado en emociones y comportamientos más realistas.</p>
+                    <p><b>MMORPG</b> de fantasía que permite<br>
+                         a los jugadores explorar un vasto mundo,<br>
+                          completar misiones, unirse a clanes y participar<br>
+                           en batallas épicas contra otros jugadores o criaturas.</p>
                 </div>
                 <a href="compra.html"class="btn-iniciar-sesion btn btn-secondary mt-3 w-30">Comprar</a>
             </a>
@@ -32,23 +33,23 @@
         <article class="categoria">
             <a href="#" class="categoria_detalle">
                 <figure>
-                    <img src="../static/img/simulacion/images.jpg" alt="Sims">
+                    <img src="../static/img/rol/images (1).jpg" alt="World of Warcraft">
                 </figure>
                 <div class="categoria-info">
                     <h2><span class="badge text-bg-secondary">Precio: 9,99 CLP</span></h2>
-                    <p><b>Juego de simulación</b> de vida<br>
-                         donde los jugadores controlan personajes<br>
-                          virtuales (Sims), guiando sus vidas cotidianas, <br>
-                          relaciones, trabajo y familia.</p>
+                    <p><b>MMORPG</b>de fantasía que permite a los jugadores<br>
+                         explorar un vasto mundo, completar misiones, unirse<br>
+                          a clanes y participar en batallas épicas contra otros jugadores o criaturas.</p>
                 </div>
                 <a href="compra.html"class="btn-iniciar-sesion btn btn-secondary mt-3 w-30">Comprar</a>
             </a>
         </article>
     
-        <a href="index.html" class="btn-iniciar-sesion btn btn-secondary mt-3 w-30">Ir al inicio</a>
+        <a href="{% url 'index' %}" class="btn-iniciar-sesion btn btn-secondary mt-3 w-30">Ir al inicio</a>
+
     
     </div>
     
-   
+
 </body>
 </html>

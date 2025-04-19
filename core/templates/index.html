@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,25 +17,25 @@
             <button type="submit">Buscar</button>
         </form>
         <div class="btns_principales">
-            <a href="inicio_sesion.html" class="iniciar"><button class="btn-iniciar-sesion" type="button">Iniciar Sesión</button></a>
-            <a href="formulario.html" class="iniciar"><button class="btn-registro" type="button">Registrarse</button></a>
-            <a href="modificacion_perfil.html" class="iniciar"><button class="btn-registro" type="button">Perfil</button></a>
+            <a href="{% url 'inicio_sesion' %}" class="iniciar"><button class="btn-iniciar-sesion" type="button">Iniciar Sesión</button></a>
+            <a href="{% url 'formulario' %}" class="iniciar"><button class="btn-registro" type="button">Registrarse</button></a>
+            <a href="{% url 'modificacion_perfil' %}" class="iniciar"><button class="btn-registro" type="button">Perfil</button></a>
         </div>
     </nav>
 
     <div class="w-100 overflow-hidden" style="height: 60vh;">
-        <img src="imagenes/videogame_image.png" class="w-100 h-100 object-fit-cover" alt="Imagen hero">
+        <img src="../static/img/videogame_image.png" class="w-100 h-100 object-fit-cover" alt="Imagen hero">
       </div>
 
 
    <form class="categorias_lista">
     <label class="categorias-label">Bienvenidos a SmartGame, selecciona la categoria que más te guste y comienza el <b>JUEGO</b>🎮</label>
-    <a href="accion.html" class="categoria">Accion</a>
-    <a href="aventura.html" class="categoria">Aventura</a>  
-    <a href="deportes.html" class="categoria">Deportes</a>
-    <a href="estrategia.html" class="categoria">Estrategia</a>
-    <a href="simulacion.html" class="categoria">Simulacion</a>
-    <a href="rol.html" class="categoria">Rol</a>
+    <a href="{% url 'accion' %}" class="categoria">Accion</a>
+    <a href="{% url 'aventura' %}" class="categoria">Aventura</a>  
+    <a href="{% url 'deportes' %}" class="categoria">Deportes</a>
+    <a href="{% url 'estrategia' %}" class="categoria">Estrategia</a>
+    <a href="{% url 'simulacion' %}" class="categoria">Simulacion</a>
+    <a href="{% url 'rol' %}" class="categoria">Rol</a>
    </form>
 
    <footer>

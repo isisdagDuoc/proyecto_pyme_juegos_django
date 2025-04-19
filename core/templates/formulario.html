@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +44,8 @@
 
         <button id="btnLimpiar" type="reset" class="btn-iniciar-sesion">Limpiar</button>
         <button type="submit" class="btn-iniciar-sesion">Enviar</button>
-        <a href="index.html" class="btn-iniciar-sesion btn btn-secondary mt-3 w-100">Ir al inicio</a>
+        <a href="{% url 'index' %}" class="btn-iniciar-sesion btn btn-secondary mt-3 w-30">Ir al inicio</a>
+
     </div>
     </form>
 
