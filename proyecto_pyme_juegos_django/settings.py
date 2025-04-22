@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'juegos',
     'core',
 ]
 
@@ -75,10 +76,15 @@ WSGI_APPLICATION = 'proyecto_pyme_juegos_django.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.oracle',
+        'NAME': 'XE',
+        'USER': 'c##grupo3',
+        'PASSWORD': 'oracle',
+        'HOST': 'localhost',
+        'PORT': '1521',
     }
 }
+
 
 
 # Password validation
@@ -117,7 +123,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'core.statics'),)
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
