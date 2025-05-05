@@ -65,3 +65,6 @@ def admin_usuarios(request):
        usuario = request.session.get('usuario_usuario', None)
        usuarios = Usuario.objects.all()
        return render(request, 'admin_usuarios.html',{'usuarios': usuarios, 'usuario_usuario': usuario})
+
+def wiki(request):
+     return render(request, 'wiki.html')

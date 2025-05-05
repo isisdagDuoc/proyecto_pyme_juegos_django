@@ -14,7 +14,7 @@ from .views import rol
 from .views import simulacion
 from .views import cerrar_sesion
 from .views import admin_usuarios
-
+from .views import wiki
 
 urlpatterns = [
     path('', index, name='index'),
@@ -32,7 +32,5 @@ urlpatterns = [
     path('simulacion/', simulacion, name='simulacion'),
     path('cerrar_sesion/', cerrar_sesion, name='cerrar_sesion'),
     path('admin_usuarios/', admin_usuarios, name='admin_usuarios'),
-
-
-    
+    path('wiki/', wiki, name='wiki'),
 ]
