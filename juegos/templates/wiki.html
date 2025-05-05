@@ -2,33 +2,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartGame</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmartGame Wiki Juegos</title>
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
-<body>
-    <h2 class="fs-1 text fw-bold text-light"> Wiki Juegos </h2>
+<body class="bg-dark text-light">
 
-    <div class=" row g-3" id="wiki_juegos">
+  <div class="w-100 overflow-hidden mb-5" style="height: 60vh;">
+    <img 
+      src="{% static 'img/videogame_image.png' %}" 
+      class="w-100 h-100 object-fit-cover" 
+      alt="Imagen hero">
+  </div>
 
-        <!-- Contenido wiki de juegos -->
-    
+  <h2 class="fs-1 text fw-bold text-light"> Wiki Video juegos </h2>
+  <h4 class="fs-3 text fw-bold text-light"> Encuentra información sobre tus juegos favoritos </h4>
+
+
+  <main class="container py-4">
+    <div id="wiki_juegos" class="row g-4">
+
+
+
         <a href="{% url 'index' %}" class="btn-iniciar-sesion btn btn-secondary mt-3 w-30">Ir al inicio</a>
-
     
     </div>
+  </main>
 
-    <div id="categoria_juego" class="container mt-5">
-        
-    </div>
-
-    </div>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{% static 'js/wiki.js' %}"></script> 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+  <script src="{% static 'js/wiki.js' %}"></script>
 </body>
 </html>
