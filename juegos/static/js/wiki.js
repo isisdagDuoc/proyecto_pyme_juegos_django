@@ -4,7 +4,6 @@ $(document).ready(function() {
     $.get('/api/categoria/', function(data) {
       console.log('Datos recibidos:', data);
   
-      // Si la respuesta es lista de categorías…
       if (Array.isArray(data) && data.length > 0) {
         
         data.forEach(function(juego) {
