@@ -76,12 +76,13 @@ WSGI_APPLICATION = 'proyecto_pyme_juegos_django.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.oracle',
-        'NAME': 'XE',
-        'USER': 'c##grupo3',
-        'PASSWORD': 'oracle',
-        'HOST': 'localhost',
-        'PORT': '1521',
+
+       # 'ENGINE': 'django.db.backends.oracle',
+       # 'NAME': 'XE',
+       # 'USER': 'c##grupo3',
+       # 'PASSWORD': 'oracle',
+       # 'HOST': 'localhost',
+       # 'PORT': '1521',
     }
 }
 
