@@ -1,13 +1,12 @@
-from django.urls import path
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import obtener_categoria, obtener_noticias, JuegoViewSet
 
-
-from .views import obtener_categoria
-from .views import obtener_noticias
-from .views import wiki
-
+router = DefaultRouter()
+router.register(r"juegos", JuegoViewSet, basename="juego")
 
 urlpatterns = [
-    #DATOS API
-    path('categoria/', obtener_categoria, name='obtener_categoria'),
-    path('noticias/', obtener_noticias, name='obtener_noticias'),
+    path("categoria/", obtener_categoria),
+    path("noticias/", obtener_noticias),
+    path("", include(router.urls)),
 ]

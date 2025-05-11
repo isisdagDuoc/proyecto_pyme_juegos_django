@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'juegos',
     'core',
+    'rest_framework',
+    'rest_api',
 ]
 
 MIDDLEWARE = [
@@ -70,19 +72,27 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'proyecto_pyme_juegos_django.wsgi.application'
 
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',  # ← esta línea habilita el login web
+    ]
+}
+
+
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
     'default': {
-
-       # 'ENGINE': 'django.db.backends.oracle',
-       # 'NAME': 'XE',
-       # 'USER': 'c##grupo3',
-       # 'PASSWORD': 'oracle',
-       # 'HOST': 'localhost',
-       # 'PORT': '1521',
+       # TODO: Cambiar a la base de datos que se va a usar
+        'ENGINE': 'django.db.backends.oracle',
+        'NAME': 'XE',
+        'USER': 'c##grupo3',
+        'PASSWORD': 'oracle',
+        'HOST': 'localhost',
+        'PORT': '1521',
     }
 }
 
