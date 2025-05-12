@@ -4,6 +4,7 @@ from .views import index
 from .views import accion
 from .views import aventura
 from .views import compra
+from .views import acepta
 from .views import deportes
 from .views import estrategia
 from .views import formulario
@@ -21,6 +22,7 @@ urlpatterns = [
     path('accion/', accion, name='accion'),
     path('aventura/', aventura, name='aventura'),
     path('compra/', compra, name='compra'),
+    path('acepta/', acepta, name='acepta'),
     path('deportes/', deportes, name='deportes'),
     path('estrategia/', estrategia, name='estrategia'),
     path('formulario/', formulario, name='formulario'),

@@ -12,8 +12,8 @@
 <body>
     <h1 class="titulo_compra">¿Quieres obtener este juego?</h1>
     <div class="btn-aceptar-rechazar">
-        <a href="acepta.html"class="btn-iniciar-sesion btn btn-secondary mt-3 w-30">Si, me lo llevo!</a>
-        <a href="index.html"class="btn-iniciar-sesion btn btn-secondary mt-3 w-30">No estoy seguro</a>
+        <a href="{% url 'acepta' %}"class="btn-iniciar-sesion btn btn-secondary mt-3 w-30">Si, me lo llevo!</a>
+        <a href="{% url 'index' %}"class="btn-iniciar-sesion btn btn-secondary mt-3 w-30">No estoy seguro</a>
     </div>
     <a href="{% url 'index' %}" class="btn-iniciar-sesion btn btn-secondary mt-3 w-30">Ir al inicio</a>
 </body>

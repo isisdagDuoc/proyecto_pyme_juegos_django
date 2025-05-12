@@ -21,6 +21,9 @@ def aventura(request):
 def compra(request):
      return render(request, 'compra.html')
 
+def acepta(request):
+     return render(request, 'acepta.html')
+
 def deportes(request):
      return render(request, 'deportes.html')
 
