@@ -86,13 +86,13 @@ REST_FRAMEWORK = {
 
 DATABASES = {
     'default': {
-       # TODO: Cambiar a la base de datos que se va a usar
-        ## 'ENGINE': 'django.db.backends.oracle',
-        ## 'NAME': 'XE',
-        ## 'USER': 'c##grupo3',
-        ## 'PASSWORD': 'oracle',
-        ## 'HOST': 'localhost',
-        ## 'PORT': '1521',
+         # TODO: Cambiar a la base de datos que se va a usar
+         'ENGINE': 'django.db.backends.oracle',
+         'NAME': 'XE',
+         'USER': 'c##grupo3',
+         'PASSWORD': 'oracle',
+         'HOST': 'localhost',
+         'PORT': '1521',
     }
 }
 
